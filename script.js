@@ -4,7 +4,7 @@ const moviePoster = document.querySelector('.rightBox');
 const movieInfo = document.querySelector('.movieInfo');
 
 const apiKey = "c4332220";
-let apiUrl = "http://www.omdbapi.com/?apikey="+apiKey;
+let apiUrl = "https://www.omdbapi.com/?apikey="+apiKey;
 
 input.addEventListener("click", () => {
     input.value = "";
