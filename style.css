@@ -59,12 +59,38 @@ body {
   width: 400px;
   border-radius: 8px;
   transition: all 2s ease;
+
+  animation: imageAnimation 3s ease;
 }
 h2 {
   margin: 0 0 20px 20px;
   color: white;
+
+  animation: textAnimation 3s ease;
 }
 
 .input:hover, .heading:hover, .label:hover, .button:hover, .poster:hover {
   transform: scale(1.1);
+}
+
+@keyframes imageAnimation {
+  from {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes textAnimation {
+  from {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
