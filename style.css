@@ -60,15 +60,18 @@ body {
   border-radius: 8px;
   transition: all 2s ease;
 
-  animation: imageAnimation 2s ease;
+  animation: imageAnimation 1s ease;
 }
-h2 {
+h3 {
   margin: 0 0 20px 20px;
-  color: white;
+  color: rgb(235, 78, 78);
 
-  animation: textAnimation 2s ease;
+  animation: textAnimation 1s ease;
 }
 
+span{
+  color: white;
+}
 .input:hover, .heading:hover, .label:hover, .button:hover, .poster:hover {
   transform: scale(1.1);
 }

@@ -14,14 +14,15 @@ input.addEventListener("click", () => {
 
 const displayInfo = (data) => {
     console.log(data);
-    const {Poster, Title, Released, Director, Genre, Actors} = data;
+    const {Poster, Title, Released, Director, Genre, Actors, imdbRating} = data;
     moviePoster.innerHTML = `<img class="poster img-thumbnail" src = ${Poster}/>`;
     movieInfo.innerHTML = 
-        `<h2>Title : ${Title}</h2>
-        <h2>Released date : ${Released}</h2>
-        <h2>Director : ${Director}</h2>
-        <h2>Genre : ${Genre}</h2>
-        <h2>Actors : ${Actors}</h2>`
+        `<h3>Title : <span>${Title}</span></h3>
+        <h3>Released date : <span>${Released}</span></h3>
+        <h3>Director : <span>${Director}</span></h3>
+        <h3>Genre : <span>${Genre}</span></h3>
+        <h3>Actors : <span>${Actors}</span></h3>
+        <h3>IMDB Rating : <span>${imdbRating}</span></h3>`
 }
 
 button.addEventListener("click", (event) => {
